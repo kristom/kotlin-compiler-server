@@ -32,7 +32,7 @@ val kotlinJsDependency: Configuration by configurations.creating {
 }
 val libJSFolder = "$kotlinVersion-js"
 val libJVMFolder = kotlinVersion
-val propertyFile = "application.properties"
+val propertyFile = "application-standalone.properties"
 
 val copyDependencies by tasks.creating(Copy::class) {
     from(kotlinDependency)
